@@ -1,14 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" font-family: Reem Kufi;>
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>GELIPAY</title>
+</head>
+<body>
+  <div><img class="encabezado"src="https://i.ibb.co/nQ9GB0q/banner2.jpg"></a></div>
+
+ <!--SECCION BIENVENIDA-->
+  <div id = "mainPage" style = "display:block" class="title">
+    <!--titulo-->
+    <div class="title"><h1>Bienvenido a <img src="https://i.ibb.co/z7JKRy3/logo.png" class="imgP"></h1></div>
+
+    <!--parrafos-->
+    <div class="p0"><p>Tu página para válidar tu Tarjeta de Crédito y realizar tus compras con facilidad.</p></div>
+
+    <!--formulario: ingreso datos tarjeta-->
+    <form class="form" id='formulario'>
+        <div class="textoDatos">
+          <label for="name"><p>Nombre Usuario:</p></label><br>
+          <input class="inputDatos" id="name" type="text" placeholder="Nombre">
+        </div>
+        <div class="textoDatos">
+          <label for="creditCardNumber"><p>Ingrese el número de su Tarjeta de Crédito:</p></label><br>
+          <input class="inputDatos" id="creditCardNumber" maxlength="16" type="text" placeholder="Número Tarjeta de Crédito">
+        </div>
+        <!--mensaje de error "Debes ingresar el número de tarjeta"-->
+        <div  id="error" style="color:red;"></div>
+        <br>
+        <!--boton validar tarjeta-->
+        <div ><button class="button" type="button" onclick="getInputNumber(event);"><strong>Validar Tarjeta</strong></button></div>
+    </form>
+
+</div>
+
+<!--SECCION VALIDA-->
+    <div id = "validCardPage" style ="display:none"  class="p1">
+        <div class="title"><h1>Felicidades, tu Tarjeta de Crédito ha sido validada correctamente</h1></div>
+        <center><img src="img/valida.png" class="imgValida"></center><br>
+    <!--parrafos-->
+        <div id = "numeroMaskify" class="p0"><p>El número de tu Tarjeta de Crédito registrada es: </p></div>
+          <br>--> <!--mostrar número tarjeta -->
+          <!--boton-->
+          <button id ="registrarTarjeta" class="button">Registrar Tarjeta</button>
+    </div>
+
+  <!--SECCION TARJETA INVALIDA-->
+    <div id ="invalidCarPage" style ="display:none" class="p1">
+        <div class="title"><h1>Lo sentimos, Tarjeta de Crédito invalida</h1></div>
+    <!--imagen de tarjeta valida-->
+        <center><img src="img/invalida.png" class="imginValida"></center><br>
+  <!--parrafos-->
+        <div class="p0"><p>Favor volver a ingresar número de Tarjeta de Crédito</p></div>
+
+  <!--boton para enviar a la página de link de super-->
+        <div><button id ="volverInicio" class="button">Aceptar</button></div>
+    </div>
+
+<script src="index.js" ></script>
+
+<footer class="footer">@2020 GELIPAY</footer>
+</body>
 </html>
