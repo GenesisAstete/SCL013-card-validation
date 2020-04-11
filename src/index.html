@@ -7,9 +7,9 @@
     <title>GELIPAY</title>
 </head>
 <body>
-  <div><img class="encabezado"src="https://i.ibb.co/nQ9GB0q/banner2.jpg"></a></div>
+  <div><img class="encabezado"src="https://i.ibb.co/nQ9GB0q/banner2.jpg"></div>
 
- <!--SECCION BIENVENIDA-->
+  <!--SECCION BIENVENIDA-->
   <div id = "mainPage" style = "display:block" class="title">
     <!--titulo-->
     <div class="title"><h1>Bienvenido a <img src="https://i.ibb.co/z7JKRy3/logo.png" class="imgP"></h1></div>
@@ -18,48 +18,62 @@
     <div class="p0"><p>Tu página para válidar tu Tarjeta de Crédito y realizar tus compras con facilidad.</p></div>
 
     <!--formulario: ingreso datos tarjeta-->
-    <form class="form" id='formulario'>
+    <form class="form" id="formulario">
         <div class="textoDatos">
           <label for="name"><p>Nombre Usuario:</p></label><br>
           <input class="inputDatos" id="name" type="text" placeholder="Nombre">
         </div>
         <div class="textoDatos">
-          <label for="creditCardNumber"><p>Ingrese el número de su Tarjeta de Crédito:</p></label><br>
+          <label for="creditCardNumber"><p>Ingrese número de Tarjeta:</p></label><br>
           <input class="inputDatos" id="creditCardNumber" maxlength="16" type="text" placeholder="Número Tarjeta de Crédito">
         </div>
         <!--mensaje de error "Debes ingresar el número de tarjeta"-->
         <div  id="error" style="color:red;"></div>
         <br>
+        
         <!--boton validar tarjeta-->
-        <div ><button class="button" type="button" onclick="getInputNumber(event);"><strong>Validar Tarjeta</strong></button></div>
+        <div ><button class="button" type="button" id ="validarTarjeta"><strong>Validar</strong></button></div>
     </form>
-
 </div>
 
-<!--SECCION VALIDA-->
+  <!--SECCION TARJETA VÁLIDA-->
     <div id = "validCardPage" style ="display:none"  class="p1">
-        <div class="title"><h1>Felicidades, tu Tarjeta de Crédito ha sido validada correctamente</h1></div>
-        <center><img src="img/valida.png" class="imgValida"></center><br>
-    <!--parrafos-->
-        <div id = "numeroMaskify" class="p0"><p>El número de tu Tarjeta de Crédito registrada es: </p></div>
-          <br>--> <!--mostrar número tarjeta -->
-          <!--boton-->
-          <button id ="registrarTarjeta" class="button">Registrar Tarjeta</button>
+        <div class="title"><h1>Felicidades, Tarjeta Válida</h1></div>
+      <!--imagen de tarjeta válida-->
+        <center><img src="img/valida.jpeg" class="imgVálida"></center><br>
+      <!--parrafos-->
+        <div id = "numeroMaskify" class="p0"><p></p></div>
+          <br> <!--mostrar número tarjeta -->
+      <!--boton para enviar a la página de link de super-->
+        <div><button id ="registrarTarjeta" class="button"><strong> Registrar</strong></button></div>
     </div>
 
-  <!--SECCION TARJETA INVALIDA-->
+  <!--SECCION TARJETA INVÁLIDA-->
     <div id ="invalidCarPage" style ="display:none" class="p1">
-        <div class="title"><h1>Lo sentimos, Tarjeta de Crédito invalida</h1></div>
-    <!--imagen de tarjeta valida-->
-        <center><img src="img/invalida.png" class="imginValida"></center><br>
-  <!--parrafos-->
+        <div class="title"><h1>Lo sentimos, Tarjeta de Crédito Inválida</h1></div>
+      <!--imagen de tarjeta inválida-->
+        <center><img src="img/invalida.jpeg" class="imgInválida"></center><br>
+      <!--parrafos-->
         <div class="p0"><p>Favor volver a ingresar número de Tarjeta de Crédito</p></div>
-
-  <!--boton para enviar a la página de link de super-->
-        <div><button id ="volverInicio" class="button">Aceptar</button></div>
+      <!--boton para enviar a la página de inicio-->
+        <div><button id ="volverInicio" class="button"><strong>Aceptar</strong></button></div>
     </div>
 
-<script src="index.js" ></script>
+  <!--SECCION INICIAR COMPRAS-->
+    <div id ="comprar" style ="display:none" class="p1">
+        <div class="title"><h1>Excelente, Tarjeta Registrada</h1></div>
+
+      <!--parrafos-->
+       <div class="p0"><p>Gracias por preferirnos, puedes seleccionar tu supermercado preferido</p></div>
+      <!--imagen de supermercados con links incluidos-->
+        <center><img src="img/lider.jpeg" class="imgSupermercado"></center><br>
+        <center><img src="img/jumbo.png" class="imgSupermercado"></center><br>
+        <center><img src="img/tottus.png" class="imgSupermercado"></center><br>
+    </div>
+
+
+
+<script src="index.js" type ="module" ></script>
 
 <footer class="footer">@2020 GELIPAY</footer>
 </body>
