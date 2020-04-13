@@ -1,5 +1,7 @@
 # GELIPAY, Tu seguridad es nuestra prioridad!
 
+![Logo del proyecto](https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/logo.png?raw=true)
+
 ## Índice
 
 * [1. Resumen del proyecto](#1-resumen-del-proyecto)
@@ -44,11 +46,11 @@ pago web, ya que lo estarías realizando a traves de nuestra página.
 
 ##### Primer Sketch :pencil:
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Primer Sketch](https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/prototipolapiz.jpg?raw=true)
 
 ##### Primer Prototipo en Invision :joy:
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Primer Prototipo Invision](https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/invision.jpg?raw=true)
 
 ##### Feedback primer Prototipo :hand: :traffic_light: :computer:
 
@@ -61,7 +63,7 @@ dejar la información más _clara_ al usuario, para evitar confusiones.
 
 ##### Prototipo Final :heart:
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Prototipo Final en Figma](https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/GeliPayFigma.png?raw=true)
 
 
 ***
