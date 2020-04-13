@@ -49,7 +49,7 @@ height: 100px;
     width: 5%;
 }
 .imginValida {
-    width: 10%;
+    width: 5%;
 }
 
 /*Input ingreso numero de tarjeta*/
@@ -97,7 +97,8 @@ height: 100px;
 @media(max-width:400px){}
 .form{
     width:90%;
-}*/
+}
+*/
 
 .imgSuper{
 
