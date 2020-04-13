@@ -16,7 +16,7 @@ function validandoTarjeta () {
     else if(ccNum === null || ccNum === '' ){                         
         mensajesError.push('Debes ingresar el número de tarjeta');
     }
-    else if(!/\d{15,16}(~\W[a-zA-Z])*$/g.test(ccNum)){                
+    else if(!/\d{13,16}(~\W[a-zA-Z])*$/g.test(ccNum)){                
        mensajesError.push('Debe ingresar solo dígitos');
     }
     //mensaje de error si dejan algun campo vacío o dato incorrecto
@@ -45,6 +45,7 @@ function validandoTarjeta () {
                 botonVolverAlInicio.addEventListener("click", () => {
                     paginaTarjetaInvalida.style.display= "none";
                     paginaPrincipal.style.display = "block";
+                    
             })
 
             }
