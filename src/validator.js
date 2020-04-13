@@ -1,14 +1,13 @@
 // objeto, que contine los metodos (funcion) para validar tarjeta con algoritmo de luhn y enmascarar
 const validator = {
   isValid: (ccNum) => {          // funcion para validar con algoritmo de luhn
-    var creditCardNumber = ccNum.value;
+    var creditCardNumber = ccNum;
     var imparNumeros = [];
     var parNumeros = [];
     var result = false;
 
   // realizamos array y reversamos
     var ccNumReverse = (creditCardNumber.split("")).reverse();
-    
 
     
   // iteramos dentro del arreglo y conseguimos posición par e impar de los datos
@@ -48,7 +47,7 @@ const validator = {
   maskify: (ccNum) => {            // funcion para enmascar tarjeta excepto los ultimos 4 dígitos
     
     var regex = /\d(?=\d{4})/gm;
-    var creditCardNumber = ccNum.value;
+    var creditCardNumber = ccNum;
     var subst = "#";
     
     // creamos variable result para que contenga el valor de la tarjeta de credito oculta

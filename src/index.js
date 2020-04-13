@@ -23,7 +23,7 @@ function validandoTarjeta () {
     error.innerHTML = mensajesError.join(','); //cadena de texto
     
     if(mensajesError == "" ) {
-        var tarjetaValida = validator.isValid(creditCardNumber);
+        var tarjetaValida = validator.isValid(ccNum);
             if (tarjetaValida === true) {
                 var enmascarar = enmascararTarjeta();
                 var mensajeTarjetaValida = document.getElementById("numeroMaskify");
@@ -52,9 +52,9 @@ function validandoTarjeta () {
 }
 
 function enmascararTarjeta(){
-    return validator.maskify(creditCardNumber);
+    var ccNum = document.getElementById("creditCardNumber").value;
+    return validator.maskify(ccNum);
 }
 
 botonValidando.addEventListener("click", validandoTarjeta);
 
-//console.log(validator);
