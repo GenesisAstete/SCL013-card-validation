@@ -6,7 +6,7 @@
 
 * [1. Resumen del proyecto](#1-resumen-del-proyecto)
 * [2. Imagen final del proyecto](#2-imagen-final-del-proyecto)
-* [3. Investigación UX](Diseño de experiencia de usuario)](#3-investigación-ux-(diseño-de-experiencia-de-usuario))
+* [3. Investigación UX (Diseño de experiencia de usuario)](#3-investigación-ux-(diseño-de-experiencia-de-usuario))
 * [4. Notas](#4-notas)
 * [5. Link de GELIPAY](#5-link-de-gelipay)
 
@@ -17,19 +17,12 @@
 Este proyecto permite _validar_ el número de una tarjeta de crédito y devolver dicho número
 ocultando todos los dígitos excepto los últimos 4, sin importar la longitud del número validado.
 
-```js
-maskify('4556364607935616') === '############5616'
-maskify(     '64607935616') ===      '#######5616'
-maskify(               '1') ===                '1'
-maskify(               '')  ===                ''
-```
-
 ***
 
 ### 2. Imagen final del proyecto
 
 
-![imagen final proyecto](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+![Imagen final proyecto](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
 ***
 
@@ -65,7 +58,7 @@ dejar la información más _clara_ al usuario, para evitar confusiones.
 ##### Prototipo Final :heart:
 
 ![Prototipo Final en Figma](https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/GeliPayFigma.png?raw=true)
-
+ [Prototipo Final en Figma](https://www.figma.com/proto/CVyDu6V8tB8Tkp4OxbB5hW/GeliPay?node-id=52%3A223&scaling=scale-down)
 
 ***
 
@@ -83,7 +76,7 @@ para entender este proyecto:
 
 ***
 
-### 5. Link de GELIPAY :rocket: 
+### 5. Link de GELIPAY :rocket:
 
 https://elihidalgo.github.io/SCL013-card-validation/src/index.html
 
