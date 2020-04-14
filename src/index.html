@@ -14,10 +14,11 @@
   <!--SECCION BIENVENIDA-->
   <div id = "mainPage" style = "display:block" class="title">
     <!--titulo-->
-    <div class="title"><h1>Bienvenido a <img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/logo.png?raw=true" class="logo"></h1></div>
+    <div class="bienvenido"><h1>Bienvenido a</h1><img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/logo.png?raw=true" class="logo">
+    </div>
 
     <!--parrafos-->
-    <div class="p0"><p>Tu página para válidar tu Tarjeta de Crédito y realizar tus compras con facilidad.</p></div>
+    <div class="p0"><p>Tu página para validar tu Tarjeta de Crédito y realizar tus compras con facilidad.</p></div>
 
     <!--formulario: ingreso datos tarjeta-->
     <form class="form" id="formulario">
@@ -44,7 +45,8 @@
       <!--imagen de tarjeta válida-->
         <img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/valida.png?raw=true" class="imgValida"><br>
       <!--parrafos-->
-        <div id = "numeroMaskify" class="p0"><p></p></div>
+        <div id = "mensajeNombre" class ="p0" ><p></p></div>
+        <div id = "numeroMaskify"><p><strong></strong></p></div>
           <br> <!--mostrar número tarjeta -->
       <!--boton para enviar a la página de link de super-->
         <div><button id ="registrarTarjeta" class="button"><strong> Registrar</strong></button></div>
@@ -52,7 +54,7 @@
 
   <!--SECCION TARJETA INVÁLIDA-->
     <div id ="invalidCarPage" style ="display:none" class="p1">
-        <div class="title"><h1>Lo sentimos, Tarjeta de Crédito Inválida</h1></div>
+        <div class="title"><h1>Lo sentimos, Tarjeta Inválida</h1></div>
       <!--imagen de tarjeta inválida-->
         <img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/invalida.png?raw=true" class="imginValida"><br>
       <!--parrafos-->
@@ -66,7 +68,8 @@
         <div class="title"><h1>Excelente, Tarjeta Registrada</h1></div>
 
       <!--parrafos-->
-       <div class="p0"><p>Gracias por preferirnos, puedes seleccionar tu supermercado preferido</p></div>
+       <div class="p0"><p>Gracias por preferirnos, puedes seleccionar</p> 
+                              <p>tu supermercado preferido</p></div>
        <br><br>
       <!--imagen de supermercados con links incluidos-->
        <div class="contenedorSuper">
