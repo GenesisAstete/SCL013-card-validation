@@ -26,11 +26,13 @@ function validandoTarjeta () {
         var tarjetaValida = validator.isValid(ccNum);
             if (tarjetaValida === true) {
                 var enmascarar = enmascararTarjeta();
+                var mensajeNombreTarjetaValida = document.getElementById("mensajeNombre");
                 var mensajeTarjetaValida = document.getElementById("numeroMaskify");
                 var paginaTarjetaValida = document.getElementById('validCardPage');
                 var botonRegistrarTarjeta = document.getElementById("registrarTarjeta");
                 var paginaComprar = document.getElementById("comprar");
-                mensajeTarjetaValida.innerHTML = nombre.toUpperCase() + " tu número de Tarjeta de Crédito es " + enmascarar;
+                mensajeNombreTarjetaValida.innerHTML = nombre.toUpperCase() + " ,tu número de Tarjeta de Crédito es: ";
+                mensajeTarjetaValida.innerHTML = enmascarar;
                 paginaPrincipal.style.display = "none";
                 paginaTarjetaValida.style.display = "block";
                 botonRegistrarTarjeta.addEventListener("click", () => {
