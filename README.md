@@ -22,7 +22,7 @@ ocultando todos los dígitos excepto los últimos 4, sin importar la longitud de
 ### 2. Imagen final del proyecto
 
 
-![Imagen final proyecto](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+![Imagen final proyecto](https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/ImagenFinalProyecto.jpeg?raw=true)
 
 ***
 
@@ -55,11 +55,10 @@ redacción de los mensajes de **Tarjeta Válida** Y **Tarjeta No Válida**. Prin
 dejar la información más _clara_ al usuario, para evitar confusiones.
 
 
-##### Prototipo Final :heart:
+##### Prototipo Final :heart: [Prototipo Final en Figma](https://www.figma.com/proto/CVyDu6V8tB8Tkp4OxbB5hW/GeliPay?node-id=52%3A223&scaling=scale-down)
 
 ![Prototipo Final en Figma](https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/GeliPayFigma.png?raw=true)
- [Prototipo Final en Figma](https://www.figma.com/proto/CVyDu6V8tB8Tkp4OxbB5hW/GeliPay?node-id=52%3A223&scaling=scale-down)
-
+ 
 ***
 
 ### 4. Notas :book:
