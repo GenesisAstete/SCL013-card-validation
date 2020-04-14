@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8" font-family: reem kufi;>
-    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Reem Kufi" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>GELIPAY</title>
 </head>
 <body>
+<div id="contenedor">  
   <div><img class="encabezado" src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/banner.jpg?raw=true"> </div>
 
   <!--SECCION BIENVENIDA-->
   <div id = "mainPage" style = "display:block" class="title">
     <!--titulo-->
-    <div class="title"><h1>Bienvenido a <img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/logo.png?raw=true" class="imgP"></h1></div>
+    <div class="title"><h1>Bienvenido a <img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/logo.png?raw=true" class="logo"></h1></div>
 
     <!--parrafos-->
     <div class="p0"><p>Tu página para válidar tu Tarjeta de Crédito y realizar tus compras con facilidad.</p></div>
@@ -20,11 +22,11 @@
     <!--formulario: ingreso datos tarjeta-->
     <form class="form" id="formulario">
         <div class="textoDatos">
-          <label for="name"><p>Nombre Usuario:</p></label><br>
+          <label for="name"><p>Nombre Usuario:</p></label>
           <input class="inputDatos" id="name" type="text" placeholder="Nombre">
         </div>
         <div class="textoDatos">
-          <label for="creditCardNumber"><p>Ingrese número de Tarjeta:</p></label><br>
+          <label for="creditCardNumber"><p>Ingrese número de Tarjeta:</p></label>
           <input class="inputDatos" id="creditCardNumber" maxlength="16" type="text" placeholder="Número Tarjeta de Crédito">
         </div>
         <!--mensaje de error "Debes ingresar el número de tarjeta"-->
@@ -40,7 +42,7 @@
     <div id = "validCardPage" style ="display:none"  class="p1">
         <div class="title"><h1>Felicidades, Tarjeta Válida</h1></div>
       <!--imagen de tarjeta válida-->
-        <center><img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/valida.png?raw=true" class="imgVálida"></center><br>
+        <img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/valida.png?raw=true" class="imgValida"><br>
       <!--parrafos-->
         <div id = "numeroMaskify" class="p0"><p></p></div>
           <br> <!--mostrar número tarjeta -->
@@ -52,7 +54,7 @@
     <div id ="invalidCarPage" style ="display:none" class="p1">
         <div class="title"><h1>Lo sentimos, Tarjeta de Crédito Inválida</h1></div>
       <!--imagen de tarjeta inválida-->
-        <center><img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/invalida.png?raw=true" class="imgInválida"></center><br>
+        <img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/invalida.png?raw=true" class="imginValida"><br>
       <!--parrafos-->
         <div class="p0"><p>Favor volver a ingresar número de Tarjeta de Crédito</p></div>
       <!--boton para enviar a la página de inicio-->
@@ -65,16 +67,21 @@
 
       <!--parrafos-->
        <div class="p0"><p>Gracias por preferirnos, puedes seleccionar tu supermercado preferido</p></div>
+       <br><br>
       <!--imagen de supermercados con links incluidos-->
-        <center><a href="https://www.lider.cl/"><img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/lider.jpg?raw=true" class="imgSupermercado" ></a></center><br>
-        <center><a href="https://www.jumbo.cl/"><img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/jumbo.png?raw=true" class="imgSupermercado"></a></center><br>
-        <center><a href="https://www.tottus.cl/tottus/"><img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/tottus.png?raw=true" class="imgSupermercado"></a></center><br>
+       <div class="contenedorSuper">
+        <a href="https://www.lider.cl/"><img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/lider.jpg?raw=true" class="imgSupermercado" ></a>
+        <a href="https://www.jumbo.cl/"><img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/jumbo.png?raw=true" class="imgSupermercado"></a>
+        <a href="https://www.tottus.cl/tottus/"><img src="https://github.com/EliHidalgo/SCL013-card-validation/blob/master/img/tottus.png?raw=true" class="imgSupermercado"></a>
+       </div> 
     </div>
 
 
-
+    <div class="footer">@2020 GELIPAY</div>
 <script src="index.js" type ="module" ></script>
 
-<footer class="footer">@2020 GELIPAY</footer>
+
+
+</div><!--cierre div contenedor-->
 </body>
 </html>

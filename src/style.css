@@ -1,33 +1,36 @@
 body, html{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
+    font-family: 'Reem Kufi';
+    
+} 
+
+#contenedor{
+    width: 80%;
+    height:95%;
+    position: absolute;
+    max-width: 1000px;
+    overflow: hidden;
+    left: 15%;
 }
 
 /* Encabezado */
 .encabezado{
-position: relative;
-text-align: center;
-left: 180px;
-width: 1000px;
-height: 100px;
-
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100px;
 }
-
-/* head {
-    background-color:#1fb6d3; 
-} */
 
 /*titulo Bienvenida*/
 .title{
     text-align: center;
+    top: 10px;
+
 }
 
 /*parrafo 0*/
 .p0{
     text-align: center;
+    font-size: 120%;
 }
 
 /*parrafo 1*/
@@ -40,25 +43,46 @@ height: 100px;
     text-align: center;
 }
 
-/*imagen principal logo*/
-.imgP {
-    width: 12%;
-}
-/*imagen principal logo*/
-.imgValida {
-    width: 5%;
-}
-.imginValida {
-    width: 5%;
-}
-
 /*Input ingreso numero de tarjeta*/
 .inputDatos{
     text-align: center;
-    display: block;
     position: relative;
-    width : 250px; 
-    left: 30px;
+    margin: 0 auto;
+    width : 95%; 
+}
+
+/*imagen principal logo*/
+.logo {
+    width: 20%;
+    position: absolute;
+    top: 100px; 
+  
+}
+
+/*imagen principal logo*/
+.imgValida {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.imginValida {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.contenedorSuper{
+    top: 200%;
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.imgSupermercado{
+    width: 70%;
 }
 
 /*botones*/
@@ -85,43 +109,85 @@ height: 100px;
     border: 1px solid #E1E1E1;
     border-radius: 5px;
     padding: 17px;
-    width: 300px;
+    width: 30%;
     position: relative;
-    left: 40%;
+    margin: 0 auto;
     background-color:#44BFB4;
     /*transform: translate(-10%, -10%);*/
 }
 
-/*estilo para dispositivos moviles*/
-/*
-@media(max-width:400px){}
-.form{
-    width:90%;
-}
-*/
-
-.imgSuper{
-
-    width: 15%;
-    position: relative;
-    text-align: center;
-    object-fit: cover;
-}
-
 .footer {
-    position: relative;
-   /*Altura total del footer en px con valor negativo */
-    margin-top: -50px;
-    /* Altura del footer en px. Se han restado los 5px del margen
-       superior mas los 5px del margen inferior
-    */
-    height: 20px;
-    padding:5px 0px;
     clear: both;
-    background-color:#44BFB4;
-    text-align: right;
-    color: #fff;
-    top: 100px;
-    width: 1000px;
-    left: 180px;
+    float: left;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    background:#44BFB4;
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+}
+
+
+/*estilo para dispositivos moviles*/
+
+@media screen and (max-width:400px){
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+  display: none;
+}
+ .encabezado{
+    display: none;
+} 
+
+.title{
+  text-align: center;
+}
+
+.form{
+    width: 100%;
+}
+.contenedorSuper{
+    grid-template-columns: 1fr;
+    width: 100%
+    
+}
+
+.imgSupermercado{
+    width: 60%;
+    position: relative
+}
+
+.inputDatos{
+    width:85%;
+}
+
+.logo{
+  width: 200px;
+  left: 5px;
+  top: 5px;
+  position: relative;
+}
+
+.imgValida {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.imginValida {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.footer{
+  display: none;
+}
+
 }
